@@ -4,8 +4,8 @@
   <remote  name="aosp"
     fetch="https://android.googlesource.com/" />
   <remote  name="Aarqw12"
-    fetch="https://github.com/Aarqw12/" revision="android-u-qpr2-beta-2_r0.8" />
-  <default revision="refs/tags/android-u-qpr2-beta-2_r0.8"
+    fetch="https://github.com/Aarqw12/" revision="android-u-qpr2-beta-3_r0.8" />
+  <default revision="refs/tags/android-u-qpr2-beta-3_r0.8"
     remote="aosp" sync-j="4" />
 
   <project path="aosp" name="kernel_common-5.15" groups="partner" remote="Aarqw12" />
