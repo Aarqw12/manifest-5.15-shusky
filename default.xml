@@ -4,12 +4,12 @@
   <remote  name="aosp"
     fetch="https://android.googlesource.com/" />
   <remote  name="Aarqw12"
-    fetch="https://github.com/Aarqw12/" revision="android-u-qpr2-beta-3_r0.8" />
-  <default revision="refs/tags/android-u-qpr2-beta-3_r0.8"
+    fetch="https://github.com/Aarqw12/" />
+  <default revision="refs/tags/android-u-qpr2-beta-3.1_r0.8"
     remote="aosp" sync-j="4" />
 
-  <project path="aosp" name="kernel_common-5.15" groups="partner" remote="Aarqw12" />
-  <project path="private/google-modules/soc/gs" name="gs" groups="partner" remote="Aarqw12" >
+  <project path="aosp" name="kernel_common-5.15" groups="partner" remote="Aarqw12" revision="android14-5.15" />
+  <project path="private/google-modules/soc/gs" name="gs" groups="partner" remote="Aarqw12" revision="android-u-qpr2-beta-3.1_r0.8" >
     <linkfile dest="WORKSPACE" src="bazel.WORKSPACE"/>
     <linkfile dest="device.bazelrc" src="device.bazelrc"/>
     <linkfile dest="update_symbol_list.sh" src="update_symbol_list.sh"/>
@@ -40,7 +40,7 @@
   <project path="private/google-modules/uwb" name="kernel/google-modules/uwb" groups="partner" />
   <project path="private/google-modules/video/gchips" name="kernel/google-modules/video/gchips" groups="partner" />
   <project path="private/google-modules/nfc" name="kernel/google-modules/nfc" groups="partner" />
-  <project path="private/google-modules/wlan/bcm4398" name="bcm4398" groups="partner" remote="Aarqw12" />
+  <project path="private/google-modules/wlan/bcm4398" name="bcm4398" groups="partner" remote="Aarqw12" revision="android-u-qpr2-beta-3.1_r0.8" />
   <project path="private/google-modules/wlan/wlan_ptracker" name="kernel/google-modules/wlan/wlan_ptracker" groups="partner" />
   <project path="build/kernel" name="kernel/build" groups="partner" >
     <linkfile dest="tools/bazel" src="kleaf/bazel.sh"/>
